@@ -1,8 +1,13 @@
+cat > README.md <<'EOF'
 # Plotly Dashboards (Synthetic Data)
-Generated with pandas + numpy + plotly.
-Run:
-  pip install numpy pandas plotly
-  cd scripts
-  python data_gen.py
-  python viz.py
-  # open ../outputs/dashboard.html
+
+Small, reproducible examples that generate synthetic datasets with NumPy/Pandas and visualize them with Plotly.
+
+## Quickstart
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/data_gen.py
+python scripts/viz.py
+# open outputs/dashboard.html
